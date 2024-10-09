@@ -1,3 +1,11 @@
+*{
+    font-family: Optima;
+}
+
+body{
+    background-color: #d3ecb3;
+}
+
 .head{
     margin: auto;
     width: 95%;
@@ -10,7 +18,6 @@
 }
 
 .head .title{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 50px;
     color: rgb(1, 101, 1);
     margin: 0;
@@ -29,7 +36,6 @@
     margin: auto;
     align-self: center;
     margin-left: 200px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .navigation a{
@@ -69,7 +75,7 @@
 
 .body .home{
     width: 95%;
-    height: 800px;
+    height: 600px;
     margin: auto;
     margin-top: 10px;
     display: flex;
@@ -78,19 +84,38 @@
     background-image: url(assets/images/bg_img/bg1.jpg);
 }
 
+.body .about{
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    padding: 30px;
+    border-radius: 15px;
+    background-image: url(assets/videos/bg_vid/bgv1.mp4);
+}
+
 .home_container{
     background-color: rgba(239, 254, 218, 0.7);
-    width: 95%;
-    height: 100px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 15px;
+}
+
+.about_container{
+    background-color: rgba(239, 254, 218, 0.7);
+    width: 100%;
+    height: auto;
     margin: auto;
     margin-top: 0;
     border-radius: 15px;
 }
 
 .crew_title{
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(1, 101, 1);
     top: 50%;
     left: 50%;
@@ -121,7 +146,7 @@
     display: block;
     text-align: left;
     font-size: 17px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     padding: 15px;
 }
 
@@ -132,4 +157,61 @@
 
 .profile:hover .dropdown_menu {
     display: block;
+}
+
+.home_body{
+    display: inline-flex;
+}
+
+.suicide_graph{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 80%;
+    max-width: 700px;
+    height: 400px;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.bar {
+    width: 15%;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(67, 115, 69, 0.8);
+    text-align: center;
+    color: #2f4d22;
+    position: relative;
+    animation: grow 2s ease-out forwards;
+    height: 0; /* Start at height 0 for animation */
+    --initial-height: 0;
+}
+
+.bar span {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+@keyframes grow {
+    0% {
+        height: var(--initial-height);
+    }
+    100% {
+        height: var(--bar-height);
+    }
+}
+
+/* Hover effect for the bars */
+.bar:hover {
+    background-color: #2b682e;
+    color: bisque;
+}
+
+.para1{
+    font-size: 21px;
 }
