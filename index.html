@@ -17,10 +17,10 @@
 
         <!-- Navigation section in the middle using divs -->
         <div class="navigation">
-                <a class="active" href="#Home">Home</a>
-                <a href="#about">About</a>
-                <a class="disabled" href="">Get Started</a>
-                <a href="#ContactUs">Contact Us</a>
+            <a class="active" href="#Home">Home</a>
+            <a class="disabled" href="#about">About</a>
+            <a href="#getStarted">Get Started</a>
+            <a href="#contactUs">Contact Us</a>
         </div>
 
         <!-- User profile section at the top right corner -->
@@ -78,16 +78,144 @@
         </div>
 
         <!-- About Section -->
-        <div class="about">
-            <div class="about_container">
+        <div class="get_started">
+            <div class="get_started_container">
                 <div class="home_title">
-                    <p class="crew_title">About</p>
+                    <p class="crew_title">Get Started</p>
                 </div>
-                <div class="about_body">
-                    
+                <div class="get_started_body">
+                    <div class="get_started_form">
+
+                        <!-- Dropdown box for state selection -->
+                        <label for="state">State: </label>
+                        <input list="state" class="state_list" placeholder="State of Farming">
+                            <datalist id="state">
+                                <option value="Andhra Pradesh"></option>
+                                <option value="Arunachal Pradesh"></option>
+                                <option value="Assam"></option>
+                                <option value="Bihar"></option>
+                                <option value="Chattisgarh"></option>
+                                <option value="Goa"></option>
+                                <option value="Gujarat"></option>
+                                <option value="Haryana"></option>
+                                <option value="Himachal Pradesh"></option>
+                                <option value="Jharkhand"></option>
+                                <option value="Karnataka"></option>
+                                <option value="Kerala"></option>
+                                <option value="Madhya Pradesh"></option>
+                                <option value="Maharashtra"></option>
+                                <option value="Manipur"></option>
+                                <option value="Meghalaya"></option>
+                                <option value="Mizoram"></option>
+                                <option value="Nagaland"></option>
+                                <option value="Odisha"></option>
+                                <option value="Punjab"></option>
+                                <option value="Rajasthan"></option>
+                                <option value="Sikkim"></option>
+                                <option value="Tamil Nadu"></option>
+                                <option value="Telangana"></option>
+                                <option value="Tripura"></option>
+                                <option value="Uttarakhand"></option>
+                                <option value="Uttar Pradesh"></option>
+                                <option value="West Bengal"></option>
+                            </datalist>
+
+                        <hr style="color: #2f4d22; border-radius: 3px; margin-top: 25px;">
+                        
+                        <!-- Checkboxes -->
+                        <p>Type of crops: </p>
+                        <div style="display: flex;">
+                            <input type="checkbox" id="Wheat">
+                            <label for="Wheat" style="margin-left: 4px;">Wheat</label>
+
+                            <input type="checkbox" id="Rice" style="margin-left: 20px;">
+                            <label for="Rice" style="margin-left: 4px;">Rice</label>
+
+                            <input type="checkbox" id="Millets" style="margin-left: 20px;">
+                            <label for="Millets" style="margin-left: 4px;">Millets</label>
+
+                            <input type="checkbox" id="Sorghum" style="margin-left: 53px;">
+                            <label for="Sorghum" style="margin-left: 4px;">Sorghum</label>
+                        </div>
+                        <div style="display: flex;">
+                            <input type="checkbox" id="Cotton">
+                            <label for="Cotton" style="margin-left: 4px;">Cotton</label>
+
+                            <input type="checkbox" id="Jute" style="margin-left: 19px;">
+                            <label for="Jute" style="margin-left: 4px;">Jute</label>
+
+                            <input type="checkbox" id="Sugarcane" style="margin-left: 26px;">
+                            <label for="Sugarcane" style="margin-left: 4px;">Sugarcane</label>
+
+                            <input type="checkbox" id="Others" style="margin-left: 20px;">
+                            <label for="Others" style="margin-left: 4px;">Others</label>
+                        </div>
+
+                        <hr style="color: #2f4d22; border-radius: 3px; margin-top: 25px;">
+
+                        <!-- Farm area input -->
+                        <label for="area">Area of farm(acre): </label>
+                        <input type="number" name="area" id="area" min="5" placeholder="Enter area of your farm">
+                        <br><br>
+
+                        <hr style="color: #2f4d22; border-radius: 3px; margin-top: 14px; margin-bottom: 20px;">
+
+                        <!-- Search button -->
+                        <div class="submit_button">
+                            Search for Dealers
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p></p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+          <div class="social-icons">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+              </a>
+
+              <a href="https://www.youtube.com/" target="_blank">
+                <img src="data:image/png;base64,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" alt="Youtube" class="social-icon">
+              </a>
+              <a href="https://twitter.com/?lang=en" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9J9fS4CY2QwxwvaxY1-5URwg2KduaJIFA5w&s" alt="X" class="social-icon">
+              </a>
+
+              <a href="https://www.facebook.com/">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-stKGw72WTM0BMA-o8wUeHKhUnTF37smEg&s" alt="Facebook" class="social-icon">
+              </a>
+              </div>
+          </div>
+          </div>
+         <br>
+        <div class="footer-bottom">
+          <p><b>Kuber Khandare</b>, Shreyansh Jain, Mehul Dewangan, Shourya Bhale, Shikhar Agrawal, Avinash Singh, Rohit Singh, Aushka Pankhuri, Bhumika Mistri, Shreya Das</p>
+          <p>&copy; 2024 The Coding Crew. All Rights Reserved.</p>
+        </div>
+    </footer> 
 </body>
 </html>
