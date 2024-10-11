@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            font-family: Optima;
+            scroll-behavior: smooth;
+        }
+        
         #container{
             width:100vw;
             height:100vh;
-            background-image:url(farm1.jpg);
+            background-image:url(../assets/images/bg_img/bg3.jpg);
             background-size: cover;
             display: flex;
         }
@@ -16,15 +21,17 @@
         
         #photo{
             position:absolute;
-            background-color: aliceblue;
+            background-color: rgba(239, 254, 218, 0.7);
             width:500px;
             height:500px;
             top:150px;
             left:200px;
             opacity:0.7;
-            border-radius: 20%;
+            border-radius: 15px 0 0 15px;
             opacity: 0.82;
-            border: 2px solid black;
+            border-top: 1px solid #2f4d22;
+            border-left: 1px solid #2f4d22;
+            border-bottom: 1px solid #2f4d22;
         }
         #icon{
             position: absolute;
@@ -41,61 +48,21 @@
             z-index: 1;
 
         }
-        #whatsapp{
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: aqua;
-            top:320px;
-            left: 30px;
-            background-image: url("whatsapp2.jpg");
-            background-size: cover;
-            transform: scale(0.9);
-            border:2px solid black;
-
-
-
-        }
-        #instagram{
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: aqua;
-            top:320px;
-            left: 190px;
-            background-image: url("instagram.jpg");
-            background-size: cover;
-            transform: scale(0.9);
-            border:2px solid black;}
-
-        #facebook{
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: aqua;
-            top:320px;
-            left: 350px; 
-            background-image: url("facebook.jpg");
-            background-size: cover;
-            transform: scale(0.9);
-            border:2px solid black;
-        } 
 
         #box{
             position:absolute;
-            background-color: aliceblue;
-            width:700px;
+            background-color: rgba(239, 254, 218, 0.7);
+            width:600px;
             height:500px;
             top:150px;
-            left:750px;
+            left:701px;
             opacity:0.5;
-            border-radius: 10%;
+            border-radius: 0 15px 15px 0;
             opacity: 0.82;
-            border:2px solid black;
-            }
+            border-top: 1px solid #2f4d22;
+            border-right: 1px solid #2f4d22;
+            border-bottom: 1px solid #2f4d22;
+        }
 
 
         #username-box {
@@ -240,7 +207,7 @@
         }
         
         #edit:hover{
-            background-color: green;
+            background-color: #2f4d22;
             color: aliceblue;
         }
 
@@ -260,7 +227,7 @@
         #back{display: inline-block;
             width: 50px;  
             height: 50px; 
-            background-color: rgb(112, 159, 84); 
+            background-color: rgb(149, 212, 112); 
             border-radius: 50%; 
             text-align: center;
             line-height: 50px; 
@@ -277,7 +244,7 @@
             
         }
         #back:hover {
-            background-color: rgb(64, 90, 49);
+            background-color: #2f4d22;
         }
            
 
@@ -290,58 +257,55 @@
     </style>
 </head>
 <body>
+    <div>
+        <!-- <div id="logo"></div> -->
+        <a href="../index.html" id="back">&larr;</a>
+    </div>
+
     <div id="container">
-        <div id="logo"></div>
-        <a href="#" id="back">&larr;</a>
-        
         <div id="photo">
             <div id="icon"></div>
-            <a href="#"><div id="whatsapp"></div></a>
+            <!-- <a href="#"><div id="whatsapp"></div></a>
             <a href="#"><div id="facebook"></div></a>
-            <a href="#"><div id="instagram"></div></a>
+            <a href="#"><div id="instagram"></div></a> -->
             <a href="#"><div id="edit">Edit profile</div></a>
-            </div>
+        </div>
         <div id="box">
             <div id="username-container">
                 <label for="username-text" id="label1"> Name:</label>
                 <div id="username-box">
                     
-                    <span id="username-text">chhota bheem</span> 
+                    <span id="username-text">Chhota Bheem</span> 
                     <span id="edit-icon" title="Edit username"></span> 
                 </div>
-            
+            </div>
                 
             <div id="uid-container">
-                    <label for="uid-text" id="label2"> UID:</label>
-                    <div id="uid-box">
-                        
-                        <span id="uid-text">XXXXXXXXXXXX</span> 
-                        <span id="edit-icon" title="Edit uid"></span> 
-                    </div>
+                <label for="uid-text" id="label2"> UID:</label>
+                <div id="uid-box">
+                    
+                    <span id="uid-text">XXXXXXXXXXXX</span> 
+                    <span id="edit-icon" title="Edit uid"></span> 
+                </div>
+            </div>
 
             <div id="address-container">
-                        <label for="address-text" id="label3"> Address:</label>
-                        <div id="address-box">
-                            
-                            <span id="address-text">dholakpur</span> 
-                            <span id="edit-icon" title="Edit address"></span> 
-                    </div>
-            <div id="pno-container">
-                            <label for="pno-text" id="label4"> Phone-no.:</label>
-                            <div id="pno-box">
-                                
-                                <span id="pno-text">1234567890</span> 
-                                <span id="edit-icon" title="Edit pno"></span> 
-                    </div>             
-            </div>
-                 
+                <label for="address-text" id="label3"> Address:</label>
+                <div id="address-box">
                     
-            
-
-
-            
-
-
+                    <span id="address-text">Dholakpur</span> 
+                    <span id="edit-icon" title="Edit address"></span> 
+                </div>
+            </div>
+            <div id="pno-container">
+                <label for="pno-text" id="label4"> Phone-no.:</label>
+                <div id="pno-box">
+                    
+                    <span id="pno-text">1234567890</span> 
+                    <span id="edit-icon" title="Edit pno"></span> 
+                </div>       
+            </div>      
+        </div>
     </div>
 
 
