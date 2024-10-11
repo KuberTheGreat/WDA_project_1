@@ -28,7 +28,7 @@
             <!-- User profile icon -->
             <img src="./assets/images/icons/user_icon.png" alt="Profile" class="user_icon">
             <div class="dropdown_menu">
-                <a href="#">Profile</a>
+                <a href="profile/profile.html">Profile</a>
                 <a href="#">Demographics</a>
                 <a href="#">Sign Up</a>
             </div>
@@ -78,16 +78,20 @@
         </div>
 
         <!-- About Section -->
-        <div class="get_started">
+        <div class="get_started" id="getStarted">
             <div class="get_started_container">
                 <div class="home_title">
                     <p class="crew_title">Get Started</p>
                 </div>
                 <div class="get_started_body">
+                    <!-- for farmers -->
                     <div class="get_started_form">
 
+                        <p style="text-align: center; font-weight: bold;
+                                  font-size: 30px; color: #2f4d22;">Farmers</p>
+
                         <!-- Dropdown box for state selection -->
-                        <label for="state">State: </label>
+                        <label for="state" style="color: #2f4d22;">State: </label>
                         <input list="state" class="state_list" placeholder="State of Farming">
                             <datalist id="state">
                                 <option value="Andhra Pradesh"></option>
@@ -123,8 +127,8 @@
                         <hr style="color: #2f4d22; border-radius: 3px; margin-top: 25px;">
                         
                         <!-- Checkboxes -->
-                        <p>Type of crops: </p>
-                        <div style="display: flex;">
+                        <p style="color: #2f4d22;">Type of crops: </p>
+                        <div style="display: flex; color: #2f4d22;">
                             <input type="checkbox" id="Wheat">
                             <label for="Wheat" style="margin-left: 4px;">Wheat</label>
 
@@ -137,7 +141,7 @@
                             <input type="checkbox" id="Sorghum" style="margin-left: 53px;">
                             <label for="Sorghum" style="margin-left: 4px;">Sorghum</label>
                         </div>
-                        <div style="display: flex;">
+                        <div style="display: flex; color: #2f4d22;">
                             <input type="checkbox" id="Cotton">
                             <label for="Cotton" style="margin-left: 4px;">Cotton</label>
 
@@ -154,7 +158,7 @@
                         <hr style="color: #2f4d22; border-radius: 3px; margin-top: 25px;">
 
                         <!-- Farm area input -->
-                        <label for="area">Area of farm(acre): </label>
+                        <label for="area" style="color: #2f4d22;">Area of farm(acre): </label>
                         <input type="number" name="area" id="area" min="5" placeholder="Enter area of your farm">
                         <br><br>
 
@@ -165,21 +169,103 @@
                             Search for Dealers
                         </div>
                     </div>
+
+                    <!-- for dealers -->
+                    <div class="get_started_form2">
+
+                        <p style="text-align: center; font-weight: bold;
+                                  font-size: 30px; color: #2f4d22;">Dealers</p>
+
+                        <!-- Dropdown box for state selection -->
+                        <label for="state" style="color: #2f4d22;">State: </label>
+                        <input list="state" class="state_list" placeholder="State of Dealership">
+                            <datalist id="state">
+                                <option value="Andhra Pradesh"></option>
+                                <option value="Arunachal Pradesh"></option>
+                                <option value="Assam"></option>
+                                <option value="Bihar"></option>
+                                <option value="Chattisgarh"></option>
+                                <option value="Goa"></option>
+                                <option value="Gujarat"></option>
+                                <option value="Haryana"></option>
+                                <option value="Himachal Pradesh"></option>
+                                <option value="Jharkhand"></option>
+                                <option value="Karnataka"></option>
+                                <option value="Kerala"></option>
+                                <option value="Madhya Pradesh"></option>
+                                <option value="Maharashtra"></option>
+                                <option value="Manipur"></option>
+                                <option value="Meghalaya"></option>
+                                <option value="Mizoram"></option>
+                                <option value="Nagaland"></option>
+                                <option value="Odisha"></option>
+                                <option value="Punjab"></option>
+                                <option value="Rajasthan"></option>
+                                <option value="Sikkim"></option>
+                                <option value="Tamil Nadu"></option>
+                                <option value="Telangana"></option>
+                                <option value="Tripura"></option>
+                                <option value="Uttarakhand"></option>
+                                <option value="Uttar Pradesh"></option>
+                                <option value="West Bengal"></option>
+                            </datalist>
+
+                        <hr style="color: #2f4d22; border-radius: 3px; margin-top: 25px;">
+                        
+                        <!-- Checkboxes -->
+                        <p style="color: #2f4d22;">Crops to buy: </p>
+                        <div style="display: flex; color: #2f4d22;">
+                            <input type="checkbox" id="Wheat">
+                            <label for="Wheat" style="margin-left: 4px;">Wheat</label>
+
+                            <input type="checkbox" id="Rice" style="margin-left: 20px;">
+                            <label for="Rice" style="margin-left: 4px;">Rice</label>
+
+                            <input type="checkbox" id="Millets" style="margin-left: 20px;">
+                            <label for="Millets" style="margin-left: 4px;">Millets</label>
+
+                            <input type="checkbox" id="Sorghum" style="margin-left: 53px;">
+                            <label for="Sorghum" style="margin-left: 4px;">Sorghum</label>
+                        </div>
+                        <div style="display: flex; color: #2f4d22;">
+                            <input type="checkbox" id="Cotton">
+                            <label for="Cotton" style="margin-left: 4px;">Cotton</label>
+
+                            <input type="checkbox" id="Jute" style="margin-left: 19px;">
+                            <label for="Jute" style="margin-left: 4px;">Jute</label>
+
+                            <input type="checkbox" id="Sugarcane" style="margin-left: 26px;">
+                            <label for="Sugarcane" style="margin-left: 4px;">Sugarcane</label>
+
+                            <input type="checkbox" id="Others" style="margin-left: 20px;">
+                            <label for="Others" style="margin-left: 4px;">Others</label>
+                        </div>
+
+                        <hr style="color: #2f4d22; border-radius: 3px; margin-top: 25px;">
+
+                        <!-- Farm area input -->
+                        <label for="area" style="color: #2f4d22;">Storage capacity: </label>
+                        <input type="number" name="area" id="area" min="5" placeholder="Enter the storage capacity">
+                        <br><br>
+
+                        <hr style="color: #2f4d22; border-radius: 3px; margin-top: 14px; margin-bottom: 20px;">
+
+                        <!-- Search button -->
+                        <div class="submit_button">
+                            Search for Farmers
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
-
-
     <footer>
         <div class="footer-container">
           <div class="footer-column">
-            <h3>About Us</h3>
-            <p></p>
+            <h3 id="about">About Us</h3>
+            <p>The Coding Crew is an independent startup by IIITL students. <br>
+                For more details, please follow us on our social media platforms.</p>
           </div>
           <div class="footer-column">
             <h3>Quick Links</h3>

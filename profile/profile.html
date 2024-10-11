@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Optima;
+            scroll-behavior: smooth;
+        }
+        
+        #container{
+            width:100vw;
+            height:100vh;
+            background-image:url(../assets/images/bg_img/bg3.jpg);
+            background-size: cover;
+            display: flex;
+        }
+        
+        
+        #photo{
+            position:absolute;
+            background-color: rgba(239, 254, 218, 0.7);
+            width:500px;
+            height:500px;
+            top:150px;
+            left:200px;
+            opacity:0.7;
+            border-radius: 15px 0 0 15px;
+            opacity: 0.82;
+            border-top: 1px solid #2f4d22;
+            border-left: 1px solid #2f4d22;
+            border-bottom: 1px solid #2f4d22;
+        }
+        #icon{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: aquamarine;
+            left:150px;
+            top:20px;
+            background-image: url("icon.jpg");
+            background-size: cover;
+            opacity: 1;
+            border: 2px solid black;
+            z-index: 1;
+
+        }
+
+        #box{
+            position:absolute;
+            background-color: rgba(239, 254, 218, 0.7);
+            width:600px;
+            height:500px;
+            top:150px;
+            left:701px;
+            opacity:0.5;
+            border-radius: 0 15px 15px 0;
+            opacity: 0.82;
+            border-top: 1px solid #2f4d22;
+            border-right: 1px solid #2f4d22;
+            border-bottom: 1px solid #2f4d22;
+        }
+
+
+        #username-box {
+            width: 400px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid gray;
+            font-size: 16px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 50px;
+            position: absolute;
+            left:100px;}
+           
+        #uid-box {
+            width: 400px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid gray;
+            font-size: 16px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 50px;
+            position: absolute;
+            left:100px;
+            top:130px;
+            
+        }
+
+        #address-box {
+            width: 400px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid gray;
+            font-size: 16px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 50px;
+            position: absolute;
+            left:100px;
+            top:230px;
+            }
+
+        #pno-box {
+            width: 400px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid gray;
+            font-size: 16px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 50px;
+            position: absolute;
+            left:100px;
+            top:330px;
+            }
+
+
+        
+       
+        #edit-icon {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        
+        #edit-icon::before {
+            content: "\270E";
+            font-size: 20px;
+        }
+
+       
+        #username-text {
+            flex-grow: 2em;
+            font-size: 1.2em;
+        }
+        
+        #uid-text {
+            flex-grow: 1;
+            font-size: 1.2em;}
+
+        #address-text {
+                flex-grow: 1;
+                font-size: 1.2em;} 
+        #pno-text {
+                    flex-grow: 1;
+                    font-size: 1.2em;}    
+
+        #label1{
+            position: relative;
+            font-size: 22px;
+            left:50px;
+            top:35px;
+        }
+        #label2{
+            position: relative;
+            font-size: 22px;
+            left:50px;
+            top:120px;
+        } 
+        
+        #label3{
+            position: relative;
+            font-size: 22px;
+            left:50px;
+            top:200px;
+        }
+        #label4{
+            position: relative;
+            font-size: 22px;
+            left:50px;
+            top:270px;
+        }
+        #edit{
+            width: 100px;
+            height: 50px;
+            border-radius: 10%;
+            position:absolute;
+            background-color: rgb(149, 212, 112);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            top:250px;
+            left:190px;
+            border: 2px solid rgb(2, 56, 2);
+            transition: background-color 0.3s ease;
+
+
+        }
+        
+        #edit:hover{
+            background-color: #2f4d22;
+            color: aliceblue;
+        }
+
+        #logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid black;
+            position: absolute;
+            left:100px;
+            top:90px;
+            transform: scale(0.95);
+            background-image: url("agrotech.jpg");
+            background-size: cover;
+            
+        }
+        #back{display: inline-block;
+            width: 50px;  
+            height: 50px; 
+            background-color: rgb(149, 212, 112); 
+            border-radius: 50%; 
+            text-align: center;
+            line-height: 50px; 
+            color: white; 
+            font-size: 24px; 
+            text-decoration: none; 
+            transition: background-color 0.3s ease; 
+            position: absolute;
+            top:20px;
+            left:20px;
+            border: 2px solid black;
+            
+        
+            
+        }
+        #back:hover {
+            background-color: #2f4d22;
+        }
+           
+
+        
+
+        
+    </style>    
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <div id="logo"></div> -->
+        <a href="../index.html" id="back">&larr;</a>
+    </div>
+
+    <div id="container">
+        <div id="photo">
+            <div id="icon"></div>
+            <!-- <a href="#"><div id="whatsapp"></div></a>
+            <a href="#"><div id="facebook"></div></a>
+            <a href="#"><div id="instagram"></div></a> -->
+            <a href="#"><div id="edit">Edit profile</div></a>
+        </div>
+        <div id="box">
+            <div id="username-container">
+                <label for="username-text" id="label1"> Name:</label>
+                <div id="username-box">
+                    
+                    <span id="username-text">Chhota Bheem</span> 
+                    <span id="edit-icon" title="Edit username"></span> 
+                </div>
+            </div>
+                
+            <div id="uid-container">
+                <label for="uid-text" id="label2"> UID:</label>
+                <div id="uid-box">
+                    
+                    <span id="uid-text">XXXXXXXXXXXX</span> 
+                    <span id="edit-icon" title="Edit uid"></span> 
+                </div>
+            </div>
+
+            <div id="address-container">
+                <label for="address-text" id="label3"> Address:</label>
+                <div id="address-box">
+                    
+                    <span id="address-text">Dholakpur</span> 
+                    <span id="edit-icon" title="Edit address"></span> 
+                </div>
+            </div>
+            <div id="pno-container">
+                <label for="pno-text" id="label4"> Phone-no.:</label>
+                <div id="pno-box">
+                    
+                    <span id="pno-text">1234567890</span> 
+                    <span id="edit-icon" title="Edit pno"></span> 
+                </div>       
+            </div>      
+        </div>
+    </div>
+
+
+    
+
+    
+</body>
+</html>
