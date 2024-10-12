@@ -4,13 +4,12 @@
 }
 
 body{
-    background-color: #d3ecb3;
+    background-image: url(../assets/images/bg_img/bg5.jpg);
 }
 
 #login{
     height: 710px;
     width: 100%;
-    background-color: #d3ecb3;
 }
 
 .title{
@@ -28,7 +27,7 @@ body{
 .login_body{
     height: 450px;
     width: 500px;
-    background-color: #EFFEDA;
+    background-color: rgba(239, 254, 218, 0.7);
     margin-left: 490px;
     border-radius: 15px;
     font-size: 15px;
