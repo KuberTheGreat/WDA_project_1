@@ -85,6 +85,19 @@ body{
     padding: 30px;
     border-radius: 15px;
     background-image: url(assets/images/bg_img/bg1.jpg);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.body .about{
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    padding: 30px;
+    border-radius: 15px;
+    background-image: url(assets/images/bg_img/bg4.jpg);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .body .get_started{
@@ -96,6 +109,7 @@ body{
     padding: 30px;
     border-radius: 15px;
     background-image: url(assets/videos/bg_vid/bgv1.mp4);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .home_container{
@@ -143,7 +157,7 @@ body{
 }
 
 .dropdown_menu a {
-    color: black;
+    color: #2f4d22;
     padding: 10px;
     text-decoration: none;
     display: block;
@@ -220,6 +234,7 @@ body{
 
 .para1{
     font-size: 21px;
+    color: #2f4d22;
 }
 
 .get_started_body{
@@ -361,4 +376,16 @@ footer {
 
 .social-icon:hover {
     transform: scale(1.5);  
+}
+
+ul.custom_bullet{
+    list-style-type: "🌾";
+    font-size: 20px;
+}
+
+ul.custom_bullet li{
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    color: #2f4d22;
 }
