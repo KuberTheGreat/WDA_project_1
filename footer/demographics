@@ -3,71 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrap</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css    ">
-    <link rel="stylesheet" href="style.css">
+    <title>Demographics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <table class="table table-hover table-success">
-        <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Crop Type</th>
-              <th scope="col">Farmers involved</th>
-              <th scope="col">Number of Dealers</th>
-              <th scope="col">Minimum Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">1</th><td>Wheat</td><td>10,670</td><td>534</td><td>Rs 1,500</td></tr>
-            <tr><th scope="row">2</th><td>Rice</td><td>15,430</td><td>645</td><td>Rs 1,800</td></tr>
-            <tr><th scope="row">3</th><td>Corn</td><td>9,200</td><td>412</td><td>Rs 1,200</td></tr>
-            <tr><th scope="row">4</th><td>Soybean</td><td>8,300</td><td>391</td><td>Rs 1,750</td></tr>
-            <tr><th scope="row">5</th><td>Barley</td><td>5,870</td><td>285</td><td>Rs 1,400</td></tr>
-            <tr><th scope="row">6</th><td>Oats</td><td>3,460</td><td>194</td><td>Rs 1,200</td></tr>
-            <tr><th scope="row">7</th><td>Cotton</td><td>11,590</td><td>526</td><td>Rs 2,000</td></tr>
-            <tr><th scope="row">8</th><td>Sugarcane</td><td>17,800</td><td>732</td><td>Rs 2,300</td></tr>
-            <tr><th scope="row">9</th><td>Pulses</td><td>4,230</td><td>178</td><td>Rs 1,600</td></tr>
-            <tr><th scope="row">10</th><td>Peanut</td><td>6,450</td><td>254</td><td>Rs 1,700</td></tr>
-            <tr><th scope="row">11</th><td>Sesame</td><td>2,900</td><td>132</td><td>Rs 1,800</td></tr>
-            <tr><th scope="row">12</th><td>Sunflower</td><td>5,200</td><td>213</td><td>Rs 1,850</td></tr>
-            <tr><th scope="row">13</th><td>Alfalfa</td><td>3,140</td><td>169</td><td>Rs 1,450</td></tr>
-            <tr><th scope="row">14</th><td>Sorghum</td><td>7,800</td><td>327</td><td>Rs 1,300</td></tr>
-            <tr><th scope="row">15</th><td>Quinoa</td><td>1,250</td><td>65</td><td>Rs 2,100</td></tr>
-            <tr><th scope="row">16</th><td>Millet</td><td>4,600</td><td>202</td><td>Rs 1,500</td></tr>
-            <tr><th scope="row">17</th><td>Rye</td><td>2,330</td><td>97</td><td>Rs 1,350</td></tr>
-            <tr><th scope="row">18</th><td>Chickpea</td><td>8,400</td><td>376</td><td>Rs 1,600</td></tr>
-            <tr><th scope="row">19</th><td>Lentils</td><td>7,190</td><td>312</td><td>Rs 1,500</td></tr>
-            <tr><th scope="row">20</th><td>Kidney Beans</td><td>6,020</td><td>274</td><td>Rs 1,700</td></tr>
-            <tr><th scope="row">21</th><td>Black Beans</td><td>5,890</td><td>261</td><td>Rs 1,650</td></tr>
-            <tr><th scope="row">22</th><td>Pigeon Pea</td><td>4,980</td><td>208</td><td>Rs 1,500</td></tr>
-            <tr><th scope="row">23</th><td>Mung Bean</td><td>3,760</td><td>198</td><td>Rs 1,400</td></tr>
-            <tr><th scope="row">24</th><td>Green Gram</td><td>2,890</td><td>163</td><td>Rs 1,350</td></tr>
-            <tr><th scope="row">25</th><td>Mustard</td><td>6,790</td><td>288</td><td>Rs 1,900</td></tr>
-            <tr><th scope="row">26</th><td>Cabbage</td><td>4,200</td><td>184</td><td>Rs 1,200</td></tr>
-            <tr><th scope="row">27</th><td>Carrot</td><td>5,800</td><td>231</td><td>Rs 1,300</td></tr>
-            <tr><th scope="row">28</th><td>Potato</td><td>13,200</td><td>542</td><td>Rs 1,000</td></tr>
-            <tr><th scope="row">29</th><td>Onion</td><td>15,670</td><td>652</td><td>Rs 1,200</td></tr>
-            <tr><th scope="row">30</th><td>Garlic</td><td>4,950</td><td>205</td><td>Rs 1,700</td></tr>
-            <tr><th scope="row">31</th><td>Tomato</td><td>12,000</td><td>510</td><td>Rs 1,100</td></tr>
-            <tr><th scope="row">32</th><td>Pumpkin</td><td>3,670</td><td>176</td><td>Rs 1,400</td></tr>
-            <tr><th scope="row">33</th><td>Cucumber</td><td>5,000</td><td>220</td><td>Rs 1,250</td></tr>
-            <tr><th scope="row">34</th><td>Bell Pepper</td><td>2,980</td><td>131</td><td>Rs 1,500</td></tr>
-            <tr><th scope="row">35</th><td>Zucchini</td><td>1,430</td><td>98</td><td>Rs 1,300</td></tr>
-            <tr><th scope="row">36</th><td>Eggplant</td><td>3,210</td><td>151</td><td>Rs 1,250</td></tr>
-            <tr><th scope="row">37</th><td>Spinach</td><td>2,540</td><td>143</td><td>Rs 1,100</td></tr>
-            <tr><th scope="row">38</th><td>Lettuce</td><td>1,970</td><td>125</td><td>Rs 1,200</td></tr>
-            <tr><th scope="row">39</th><td>Cauliflower</td><td>6,350</td><td>256</td><td>Rs 1,350</td></tr>
-            <tr><th scope="row">40</th><td>Broccoli</td><td>3,800</td><td>179</td><td>Rs 1,400</td></tr>
-            
-          
-        </tbody>
-      </table>
-      
-    
+<body class="bg-light">
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
-    "></script>
+    <div class="container mt-5">
+        <h2 class="text-center text-success mb-4"><b>DEMOGRAPHICS</b></h2>
+        
+        <table class="table table-hover table-striped table-bordered table-success align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Crop Type</th>
+                    <th scope="col">Farmers Involved</th>
+                    <th scope="col">Number of Dealers</th>
+                    <th scope="col">Minimum Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">1</th><td class="text-success">Wheat</td><td>10,670</td><td>534</td><td class="text-success">Rs 1,500</td></tr>
+                <tr><th scope="row">2</th><td class="text-success">Rice</td><td>15,430</td><td>645</td><td class="text-success">Rs 1,800</td></tr>
+                <tr><th scope="row">3</th><td class="text-success">Corn</td><td>9,200</td><td>412</td><td class="text-success">Rs 1,200</td></tr>
+                <tr><th scope="row">4</th><td class="text-success">Soybean</td><td>8,300</td><td>391</td><td class="text-success">Rs 1,750</td></tr>
+                <tr><th scope="row">5</th><td class="text-success">Barley</td><td>5,870</td><td>285</td><td class="text-success">Rs 1,400</td></tr>
+                <tr><th scope="row">6</th><td class="text-success">Oats</td><td>3,460</td><td>194</td><td class="text-success">Rs 1,200</td></tr>
+                <tr><th scope="row">7</th><td class="text-success">Cotton</td><td>11,590</td><td>526</td><td class="text-success">Rs 2,000</td></tr>
+                <tr><th scope="row">8</th><td class="text-success">Sugarcane</td><td>17,800</td><td>732</td><td class="text-success">Rs 2,300</td></tr>
+                <tr><th scope="row">9</th><td class="text-success">Pulses</td><td>4,230</td><td>178</td><td class="text-success">Rs 1,600</td></tr>
+                <tr><th scope="row">10</th><td class="text-success">Peanut</td><td>6,450</td><td>254</td><td class="text-success">Rs 1,700</td></tr>
+                <tr><th scope="row">11</th><td class="text-success">Sesame</td><td>2,900</td><td>132</td><td class="text-success">Rs 1,800</td></tr>
+                <tr><th scope="row">12</th><td class="text-success">Sunflower</td><td>5,200</td><td>213</td><td class="text-success">Rs 1,850</td></tr>
+                <tr><th scope="row">13</th><td class="text-success">Alfalfa</td><td>3,140</td><td>169</td><td class="text-success">Rs 1,450</td></tr>
+                <tr><th scope="row">14</th><td class="text-success">Sorghum</td><td>7,800</td><td>327</td><td class="text-success">Rs 1,300</td></tr>
+                <tr><th scope="row">15</th><td class="text-success">Quinoa</td><td>1,250</td><td>65</td><td class="text-success">Rs 2,100</td></tr>
+                <tr><th scope="row">16</th><td class="text-success">Millet</td><td>4,600</td><td>202</td><td class="text-success">Rs 1,500</td></tr>
+                <tr><th scope="row">17</th><td class="text-success">Rye</td><td>2,330</td><td>97</td><td class="text-success">Rs 1,350</td></tr>
+                <tr><th scope="row">18</th><td class="text-success">Chickpea</td><td>8,400</td><td>376</td><td class="text-success">Rs 1,600</td></tr>
+                <tr><th scope="row">19</th><td class="text-success">Lentils</td><td>7,190</td><td>312</td><td class="text-success">Rs 1,500</td></tr>
+                <tr><th scope="row">20</th><td class="text-success">Kidney Beans</td><td>6,020</td><td>274</td><td class="text-success">Rs 1,700</td></tr>
+                <tr><th scope="row">21</th><td class="text-success">Black Beans</td><td>5,890</td><td>261</td><td class="text-success">Rs 1,650</td></tr>
+                <tr><th scope="row">22</th><td class="text-success">Pigeon Pea</td><td>4,980</td><td>208</td><td class="text-success">Rs 1,500</td></tr>
+                <tr><th scope="row">23</th><td class="text-success">Mung Bean</td><td>3,760</td><td>198</td><td class="text-success">Rs 1,400</td></tr>
+                <tr><th scope="row">24</th><td class="text-success">Green Gram</td><td>2,890</td><td>163</td><td class="text-success">Rs 1,350</td></tr>
+                <tr><th scope="row">25</th><td class="text-success">Mustard</td><td>6,790</td><td>288</td><td class="text-success">Rs 1,900</td></tr>
+                <tr><th scope="row">26</th><td class="text-success">Cabbage</td><td>4,200</td><td>184</td><td class="text-success">Rs 1,200</td></tr>
+                <tr><th scope="row">27</th><td class="text-success">Carrot</td><td>5,800</td><td>231</td><td class="text-success">Rs 1,300</td></tr>
+                <tr><th scope="row">28</th><td class="text-success">Potato</td><td>13,200</td><td>542</td><td class="text-success">Rs 1,000</td></tr>
+                <tr><th scope="row">29</th><td class="text-success">Onion</td><td>15,670</td><td>652</td><td class="text-success">Rs 1,200</td></tr>
+                <tr><th scope="row">30</th><td class="text-success">Garlic</td><td>4,950</td><td>205</td><td class="text-success">Rs 1,700</td></tr>
+                <tr><th scope="row">31</th><td class="text-success">Tomato</td><td>12,000</td><td>510</td><td class="text-success">Rs 1,100</td></tr>
+                <tr><th scope="row">32</th><td class="text-success">Pumpkin</td><td>3,670</td><td>176</td><td class="text-success">Rs 1,400</td></tr>
+                <tr><th scope="row">33</th><td class="text-success">Cucumber</td><td>5,000</td><td>220</td><td class="text-success">Rs 1,250</td></tr>
+                <tr><th scope="row">34</th><td class="text-success">Spinach</td><td>2,410</td><td>125</td><td class="text-success">Rs 1,200</td></tr>
+                <tr><th scope="row">35</th><td class="text-success">Green Beans</td><td>4,520</td><td>198</td><td class="text-success">Rs 1,300</td></tr>
+                <tr><th scope="row">36</th><td class="text-success">Eggplant</td><td>3,210</td><td>151</td><td class="text-success">Rs 1,250</td></tr>
+                <tr><th scope="row">37</th><td class="text-success">Spinach</td><td>2,540</td><td>143</td><td class="text-success">Rs 1,100</td></tr>
+                <tr><th scope="row">38</th><td class="text-success">Lettuce</td><td>1,970</td><td>125</td><td class="text-success">Rs 1,200</td></tr>
+                <tr><th scope="row">39</th><td class="text-success">Cauliflower</td><td>6,350</td><td>256</td><td class="text-success">Rs 1,350</td></tr>
+                <tr><th scope="row">40</th><td class="text-success">Broccoli</td><td>3,800</td><td>179</td><td class="text-success">Rs 1,400</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
