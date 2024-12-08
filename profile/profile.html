@@ -140,13 +140,13 @@
 
         
        
-        #edit-icon {
+        .edit-icon {
             margin-left: 10px;
             cursor: pointer;
         }
 
         
-        #edit-icon::before {
+        .edit-icon::before {
             content: "\270E";
             font-size: 20px;
         }
@@ -260,7 +260,35 @@
             margin-left: 630px;
             margin-top: 3px;
         }
-        
+        input {
+            font-size: 20px;
+            padding: 5px;
+            border: 1px solid rgb(1, 22, 2);
+            border-radius: 4px;
+            width: 400px;
+            height:30px;
+            color: #030900;
+            background-color:#c0ec99;
+            outline: none;
+        }
+        #savebutton{width: 100px;
+            height: 50px;
+            border-radius: 10%;
+            position:absolute;
+            background-color: #EFFEDA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2f4d22;
+            top:250px;
+            left:190px;
+            border: 2px solid rgb(2, 56, 2);
+            transition: background-color 0.3s ease;}
+
+        #savebutton:hover{
+            background-color: #2f4d22;
+            color: #EFFEDA;
+        }    
 
         
     </style>    
@@ -270,17 +298,15 @@
 </head>
 <body>
     <div>
-        <!-- <div id="logo"></div> -->
+       
         <a href="../index.html" id="back">&larr;</a>
     </div>
 
     <div id="container">
         <div id="photo">
             <div id="icon"></div>
-            <!-- <a href="#"><div id="whatsapp"></div></a>
-            <a href="#"><div id="facebook"></div></a>
-            <a href="#"><div id="instagram"></div></a> -->
-            <a href="#"><div id="edit">Edit profile</div></a>
+           
+            <a href="#"><div id="edit" onclick="enableUsernameEdit()">Edit profile</div></a>
         </div>
 
         <div class="agro_logo_box">
@@ -293,7 +319,7 @@
                 <div id="username-box">
                     
                     <span id="username-text">Chhota Bheem</span> 
-                    <span id="edit-icon" title="Edit username"></span> 
+                    <span class="edit-icon" onclick="enableUsernameEditpencil()" title="Edit username"></span> 
                 </div>
             </div>
                 
@@ -302,7 +328,7 @@
                 <div id="uid-box">
                     
                     <span id="uid-text">XXXXXXXXXXXX</span> 
-                    <span id="edit-icon" title="Edit uid"></span> 
+                    <span class="edit-icon" onclick="enableuidEditpencil()" title="Edit uid"></span> 
                 </div>
             </div>
 
@@ -311,7 +337,7 @@
                 <div id="address-box">
                     
                     <span id="address-text">Dholakpur</span> 
-                    <span id="edit-icon" title="Edit address"></span> 
+                    <span class="edit-icon" onclick="enableaddressEditpencil()" title="Edit address"></span> 
                 </div>
             </div>
             <div id="pno-container">
@@ -319,7 +345,7 @@
                 <div id="pno-box">
                     
                     <span id="pno-text">1234567890</span> 
-                    <span id="edit-icon" title="Edit pno"></span> 
+                    <span class="edit-icon" onclick ="enablephnoEditpencil()" title="Edit pno"></span> 
                 </div>       
             </div>      
         </div>
@@ -327,7 +353,189 @@
 
 
     
+    <script>
 
+       
+        is_edited=false;
+
+        function enableUsernameEdit() {
+            is_edited=true;
+           
+            const usernameSpan = document.getElementById("username-text");
+            const currentValue = usernameSpan.textContent;
+
+           
+            if (document.getElementById("username-input")) return;
+
+            
+            const input = document.createElement("input");
+            input.type = "text";
+            input.id = "username-input";
+            input.value = currentValue;
+
+           
+            usernameSpan.replaceWith(input);
+            input.focus();
+
+           
+            input.addEventListener("blur", () => {
+                const updatedValue = input.value;
+
+                
+                const span = document.createElement("span");
+                span.id = "username-text";
+                span.textContent = updatedValue;
+                
+
+                input.replaceWith(span);
+                document.getElementById("username-text").innerHTML=updatedValue;
+                 
+            });
+        }
+        
+        function enableUsernameEditpencil() {
+            if(is_edited){
+            const usernameSpan = document.getElementById("username-text");
+            const currentValue = usernameSpan.textContent;
+
+           
+            if (document.getElementById("username-input")) return;
+
+
+            const input = document.createElement("input");
+            input.type = "text";
+            input.id = "username-input";
+            input.value = currentValue;
+
+
+            usernameSpan.replaceWith(input);
+            input.focus();
+
+
+            input.addEventListener("blur", () => {
+                const updatedValue = input.value;
+
+                
+                const span = document.createElement("span");
+                span.id = "username-text";
+                span.textContent = updatedValue;
+
+                input.replaceWith(span);
+                document.getElementById("username-text").innerHTML=updatedValue;
+              })};
+        }
+
+        function enableuidEditpencil() {
+            if(is_edited){
+            const uidSpan = document.getElementById("uid-text");
+            const currentValue = uidSpan.textContent;
+
+            
+            if (document.getElementById("uidname-input")) return;
+
+           
+            const input = document.createElement("input");
+            input.type = "number";
+            input.id = "uidname-input";
+            input.setAttribute("maxlength", "12"); 
+            input.setAttribute("minlength", "12"); 
+            input.setAttribute("pattern", "[0-9]{12}"); 
+            input.setAttribute("oninput", "this.value = this.value.slice(0, 12)");
+            input.value = currentValue;
+            
+            uidSpan.replaceWith(input);
+            input.focus();
+
+
+            input.addEventListener("blur", () => {
+                const updatedValue = input.value;
+
+               
+                const span = document.createElement("span");
+                span.id = "uid-text";
+                
+                span.textContent = updatedValue;
+                
+                input.replaceWith(span);
+                document.getElementById("uid-text").innerHTML=updatedValue;
+            })};
+        }
+        function enableaddressEditpencil() {
+            if(is_edited){
+            const addressnameSpan = document.getElementById("address-text");
+            const currentValue = addressnameSpan.textContent;
+
+
+            if (document.getElementById("addressname-input")) return;
+
+            
+            const input = document.createElement("input");
+            input.type = "text";
+            input.id = "addressname-input";
+            input.value = currentValue;
+
+            
+            addressnameSpan.replaceWith(input);
+            input.focus();
+
+            
+            input.addEventListener("blur", () => {
+                const updatedValue = input.value;
+
+                
+                const span = document.createElement("span");
+                span.id = "address-text";
+                span.textContent = updatedValue;
+
+                input.replaceWith(span);
+                document.getElementById("address-text").innerHTML=updatedValue;
+            })};
+        }
+        function enablephnoEditpencil() {
+            if(is_edited){
+            const pnonameSpan = document.getElementById("pno-text");
+            const currentValue = pnonameSpan.textContent;
+
+            
+            if (document.getElementById("pnoname-input")) return; 
+
+           
+            const input = document.createElement("input");
+            input.type = "number";
+            input.id = "pnoname-input";
+            input.setAttribute("maxlength", "10"); 
+            input.setAttribute("minlength", "10"); 
+            input.setAttribute("pattern", "[0-9]{10}");
+            input.setAttribute("oninput", "this.value = this.value.slice(0, 10)");
+            
+            input.value = currentValue;
+
+           
+            pnonameSpan.replaceWith(input);
+            input.focus();
+
+            
+            input.addEventListener("blur", () => {
+                const updatedValue = input.value;
+
+                
+                const span = document.createElement("span");
+                span.id = "pno-text";
+                span.textContent = updatedValue;
+
+                input.replaceWith(span);
+                document.getElementById("pno-text").innerHTML=updatedValue;
+            })};
+        }
+
+
+
+    </script>
+    
+    
+    
+    
+    
     
 </body>
 </html>
